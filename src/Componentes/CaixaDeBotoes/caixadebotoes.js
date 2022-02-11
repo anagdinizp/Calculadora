@@ -1,8 +1,8 @@
 import caixadebotoes from './estilocaixadebotoes.js';
 
-const CaixaDeBotoes = ({ filhos }) => {
+const CaixaDeBotoes = ({ children }) => {
     return (
-        <caixadebotoes>{filhos}</caixadebotoes>
+        <caixadebotoes>{children}</caixadebotoes>
     );
 };
 
