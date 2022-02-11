@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Visor = styled.div`
+export const visor = styled.div`
     height: 100px;
     width: 100%;
     margin-bottom: 10px;

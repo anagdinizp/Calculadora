@@ -1,9 +1,9 @@
 import React from 'react';
-import Visor from './estilovisor.js';
+import visor from './estilovisor.js';
 
 const Visor = ({ valor }) => {
     return (
-        <Visor>{valor}</Visor>
+        <visor>{valor}</visor>
     );
 };
 

@@ -1,8 +1,8 @@
-import CaixaDeBotoes from './estilocaixadebotoes.js';
+import caixadebotoes from './estilocaixadebotoes.js';
 
 const CaixaDeBotoes = ({ filhos }) => {
     return (
-        <CaixaDeBotoes>{filhos}</CaixaDeBotoes>
+        <caixadebotoes>{filhos}</caixadebotoes>
     );
 };
 

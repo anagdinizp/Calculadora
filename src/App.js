@@ -1,16 +1,14 @@
-import Caixa from './Componentes/Caixa';
-import Visor from './Componentes/Visor';
-import CaixaDeBotoes from './Componentes/CaixaDeBotoes';
-import Botoes from './Componentes/Botoes';
+import Caixa from './Componentes/Caixa/caixa.js';
+import Visor from './Componentes/Visor/visor.js';
+import CaixaDeBotoes from './Componentes/CaixaDeBotoes/caixadebotoes.js';
+import Botoes from './Componentes/Botoes/botoes.js';
 
 const App = () => {
     return (
         <Caixa>
             <Visor value="0" />
             <CaixaDeBotoes>
-                <Botoes onClick={() => {
-                    console.log("Clicado!");
-                }}
+                <Botoes onClick={() => {}}
                 />
             </CaixaDeBotoes>
         </Caixa>

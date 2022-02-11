@@ -1,8 +1,8 @@
-import { Caixa } from './estilocaixa';
+import { caixa } from './estilocaixa';
 
 const Caixa = ({ filhos }) => {
     return (
-        <Caixa>{filhos}</Caixa>
+        <caixa>{filhos}</caixa>
     );
 }
 

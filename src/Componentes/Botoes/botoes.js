@@ -1,8 +1,8 @@
-import Botoes from './estilobotoes.js';
+import botoes from './estilobotoes.js';
 
 const Botoes = ({ classe, valor, onClick }) => {
     return (
-        <Botoes classe={classe} onClick={onClick}>{valor}</Botoes>
+        <botoes classe={classe} onClick={onClick}>{valor}</botoes>
     );
 };
 
