@@ -1,9 +1,10 @@
-import caixadebotoes from './estilocaixadebotoes.js';
+import React from 'react';
+import estilocaixadebotoes from './estilocaixadebotoes.js';
 
-const CaixaDeBotoes = ({ children }) => {
+const caixadebotoes = ({ children }) => {
     return (
-        <caixadebotoes>{children}</caixadebotoes>
+        <estilocaixadebotoes>{children}</estilocaixadebotoes>
     );
 };
 
-export default CaixaDeBotoes;
+export default caixadebotoes;

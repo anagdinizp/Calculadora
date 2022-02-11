@@ -1,9 +1,10 @@
-import { caixa } from './estilocaixa';
+import React from 'react';
+import { estilocaixa } from './estilocaixa.js';
 
-const Caixa = ({ children }) => {
+const caixa = ({ children }) => {
     return (
-        <caixa>{children}</caixa>
+        <estilocaixa>{children}</estilocaixa>
     );
 }
 
-export default Caixa;
+export default caixa;
