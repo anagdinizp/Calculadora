@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const botoes = styled.div`
+export const EstiloBotao = styled.div`
     border: none;
     background-color: #FEF4DC;
     font-size: 24px;
@@ -9,8 +9,11 @@ export const botoes = styled.div`
     cursor: pointer;
     border-radius: 10px;
     outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    Botoes:hover {
+    Botao:hover {
         background-color: #F1E5C4;
     }
 `;

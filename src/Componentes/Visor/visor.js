@@ -1,10 +1,10 @@
 import React from 'react';
-import { estilovisor } from './estilovisor.js';
+import { EstiloVisor } from './style.js';
 
-const visor = ({ valor }) => {
+const Visor = ({ valor }) => {
     return (
-        <estilovisor>{valor}</estilovisor>
+        <EstiloVisor>{valor}</EstiloVisor>
     );
 };
 
-export default visor;
+export default Visor;
