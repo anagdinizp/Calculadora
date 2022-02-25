@@ -4,11 +4,11 @@ import Visor from './Componentes/Visor/Visor';
 import Botoes from './Componentes/Botoes/Botoes';
 
 const App = () => {
-    const [Valor, setValor] = useState("")
+    const [digitos, setDigitos] = useState("");
     return (
         <Caixa>
-            <Visor valor={Valor}/>
-            <Botoes setValor={setValor}/>
+            <Visor digitos={digitos}/>
+            <Botoes digitos={digitos} setDigitos={setDigitos}/>
         </Caixa>
     );
 };

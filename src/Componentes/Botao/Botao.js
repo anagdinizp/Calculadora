@@ -1,9 +1,9 @@
 import React from 'react';
 import { EstiloBotao } from './style';
 
-const Botao = ({ children }) => {
+const Botao = ({ children, atualizarDigitos }) => {
     return (
-        <EstiloBotao>{children}</EstiloBotao>
+        <EstiloBotao onClick={() => atualizarDigitos(children)}>{children}</EstiloBotao>
     );
 };
 

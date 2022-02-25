@@ -1,9 +1,9 @@
 import React from 'react';
 import { EstiloVisor } from './style.js';
 
-const Visor = ({ valor }) => {
+const Visor = ({ children }) => {
     return (
-        <EstiloVisor>{valor}</EstiloVisor>
+        <EstiloVisor>{children}</EstiloVisor>
     );
 };
 
