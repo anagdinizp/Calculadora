@@ -16,4 +16,9 @@ export const EstiloBotao = styled.div`
     Botao:hover {
         background-color: #F1E5C4;
     }
+
+    .Igualdade {
+        grid-column: 3 / 5;
+        background-color: #EACF90;
+    }
 `;
