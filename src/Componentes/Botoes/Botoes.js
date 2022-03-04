@@ -6,19 +6,19 @@ const Botoes = ({ digitos, setDigitos }) => {
     const resultado = () => {
         if (digitos.includes("+")){
             const [numero1, numero2] = digitos.split("+");
-            return Number(numero1) + Number(numero2);
+            return String(Number(numero1) + Number(numero2));
         }
         if (digitos.includes("-")){
             const [numero1, numero2] = digitos.split("-");
-            return Number(numero1) - Number(numero2);
+            return String(Number(numero1) - Number(numero2));
         }
         if (digitos.includes("x")){
             const [numero1, numero2] = digitos.split("x");
-            return Number(numero1) * Number(numero2);
+            return String(Number(numero1) * Number(numero2));
         }
         if (digitos.includes("/")){
             const [numero1, numero2] = digitos.split("/");
-            return Number(numero1) / Number(numero2);
+            return String(Number(numero1) / Number(numero2));
         }
     }
 
@@ -34,6 +34,9 @@ const Botoes = ({ digitos, setDigitos }) => {
         } else if (children === "="){
             setDigitos(resultado())
 
+        } else if (children === "ᐊ"){
+            setDigitos(digitos.slice(0, digitos.length - 1))    
+
         } else {
             if (digitos === "0") {
                 setDigitos(children)
@@ -48,7 +51,7 @@ const Botoes = ({ digitos, setDigitos }) => {
             <Botao atualizarDigitos={atualizarDigitos}>C</Botao>
             <Botao atualizarDigitos={atualizarDigitos}>+-</Botao>
             <Botao atualizarDigitos={atualizarDigitos}>%</Botao>
-            <Botao atualizarDigitos={atualizarDigitos}>/</Botao>
+            <Botao atualizarDigitos={atualizarDigitos}>ᐊ</Botao>
             <Botao atualizarDigitos={atualizarDigitos}>7</Botao>
             <Botao atualizarDigitos={atualizarDigitos}>8</Botao>
             <Botao atualizarDigitos={atualizarDigitos}>9</Botao>
@@ -63,7 +66,9 @@ const Botoes = ({ digitos, setDigitos }) => {
             <Botao atualizarDigitos={atualizarDigitos}>+</Botao>
             <Botao atualizarDigitos={atualizarDigitos}>0</Botao>
             <Botao atualizarDigitos={atualizarDigitos}>.</Botao>
+            <Botao atualizarDigitos={atualizarDigitos}>/</Botao>
             <Botao className="Igualdade" atualizarDigitos={atualizarDigitos}>=</Botao>
+
         </EstiloBotoes>
     );
 };
