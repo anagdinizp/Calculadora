@@ -4,7 +4,7 @@ import Visor from './Componentes/Visor/Visor';
 import Botoes from './Componentes/Botoes/Botoes';
 
 const App = () => {
-    const [digitos, setDigitos] = useState("");
+    const [digitos, setDigitos] = useState("0");
     return (
         <Caixa>
             <Visor digitos={digitos}/>

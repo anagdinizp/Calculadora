@@ -9,8 +9,16 @@ const Botoes = ({ digitos, setDigitos }) => {
             return Number(numero1) + Number(numero2);
         }
         if (digitos.includes("-")){
-            const [numero3, numero4] = digitos.split("-");
-            return Number(numero3) - Number(numero4);
+            const [numero1, numero2] = digitos.split("-");
+            return Number(numero1) - Number(numero2);
+        }
+        if (digitos.includes("x")){
+            const [numero1, numero2] = digitos.split("x");
+            return Number(numero1) * Number(numero2);
+        }
+        if (digitos.includes("/")){
+            const [numero1, numero2] = digitos.split("/");
+            return Number(numero1) / Number(numero2);
         }
     }
 
